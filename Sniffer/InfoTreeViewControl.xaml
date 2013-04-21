@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Sniffer.InfoTreeViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             >
+    <DockPanel MouseWheel="TreeView_MouseWheel">
+
+        <!-- FAMILY TREE -->
+        <TreeView ItemsSource="{Binding FirstGeneration}" MouseWheel="TreeView_MouseWheel">
+            <TreeView.ItemContainerStyle>
+                <!-- 
+        This Style binds a TreeViewItem to a PersonViewModel. 
+        -->
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="FontWeight" Value="Normal" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TreeView.ItemContainerStyle>
+
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Detail}" MouseWheel="TreeView_MouseWheel" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+
+    </DockPanel>
+</UserControl>

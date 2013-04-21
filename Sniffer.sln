@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniffer", "Sniffer\Sniffer.csproj", "{CE49DDA1-2ACA-4069-B05F-8B8C4D7E2308}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SnifferSetup", "SnifferSetup\SnifferSetup.vdproj", "{89984F7F-7F03-4AB7-8F66-69879D8EB36C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs06
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Sniffer\\Sniffer.csproj
+		SccProjectName1 = Sniffer
+		SccLocalPath1 = Sniffer
+		SccProjectUniqueName2 = SnifferSetup\\SnifferSetup.vdproj
+		SccProjectName2 = SnifferSetup
+		SccLocalPath2 = SnifferSetup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE49DDA1-2ACA-4069-B05F-8B8C4D7E2308}.Debug|x86.ActiveCfg = Debug|x86
+		{CE49DDA1-2ACA-4069-B05F-8B8C4D7E2308}.Debug|x86.Build.0 = Debug|x86
+		{CE49DDA1-2ACA-4069-B05F-8B8C4D7E2308}.Release|x86.ActiveCfg = Release|x86
+		{CE49DDA1-2ACA-4069-B05F-8B8C4D7E2308}.Release|x86.Build.0 = Release|x86
+		{89984F7F-7F03-4AB7-8F66-69879D8EB36C}.Debug|x86.ActiveCfg = Debug
+		{89984F7F-7F03-4AB7-8F66-69879D8EB36C}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

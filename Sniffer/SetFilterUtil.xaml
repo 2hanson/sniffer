@@ -1,0 +1,29 @@
+﻿<Window x:Class="Sniffer.SetFilterUtil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        mc:Ignorable="d" Title="Sniffer: Set Filter" HorizontalAlignment="Center" VerticalContentAlignment="Center"
+        Height="400" Width="600" d:DesignHeight="200" d:DesignWidth="600">
+    <Grid>
+        <ListBox Margin="114,16,8,99" x:Name="Filters" SelectionChanged="Filters_SelectionChanged">
+            <ListBoxItem>No ARP</ListBoxItem>
+            <ListBoxItem>No IP</ListBoxItem>
+            <ListBoxItem>No TCP</ListBoxItem>
+            <ListBoxItem>No UDP</ListBoxItem>
+            <ListBoxItem>IP only</ListBoxItem>
+            <ListBoxItem>TCP only</ListBoxItem>
+            <ListBoxItem>UDP only</ListBoxItem>
+            <ListBoxItem>ARP only</ListBoxItem>
+            <ListBoxItem>TCP/IP only</ListBoxItem>
+        </ListBox>
+        <Label Content="Filter String" HorizontalAlignment="Left" Margin="3,0,0,36" Width="110" Height="27" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="FilterStringLabel" HorizontalAlignment="Left" Margin="163,0,0,36" Width="349" Height="27" VerticalAlignment="Bottom"/>
+        <Button Content="Apply" HorizontalAlignment="Right" Height="25" Margin="0,0,132,8" VerticalAlignment="Bottom" Width="74" Click="Apply_Click" />
+        <Button Content="Cancle" HorizontalAlignment="Right" Height="25" Margin="0,0,35,8" VerticalAlignment="Bottom" Width="74" Click="Cancle_Click" />
+        <Label Content="Filter Name" HorizontalAlignment="Left" Margin="3,0,0,68" Width="110" Height="27" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="FilterNameLabel" HorizontalAlignment="Left" Margin="163,0,0,68" Width="349" Height="27" VerticalAlignment="Bottom"/>
+        <Button Content="New Filter" HorizontalAlignment="Left" Height="26" Margin="8,60,0,0" VerticalAlignment="Top" Width="84" Click="AddFilter" />
+        <Button Content="Delete Filter" HorizontalAlignment="Left" Height="26" Margin="8,126,0,0" VerticalAlignment="Top" Width="84" Click="DeleteFilter" />
+    </Grid>
+</Window>
